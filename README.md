@@ -1,6 +1,6 @@
 <img src='https://munchify.hu/img/munchify_logo1.png' style='width: 20%;'></img></center>
 <hr>
-<b>Munchify</b>by: 'A' Csapat
+<b>Munchify</b> by: 'A' Csapat
 <hr>
 A Csapat tagjai:<br>
 Tátrai Péter (JB7BRA)<br>
