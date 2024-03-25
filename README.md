@@ -2,7 +2,7 @@
 <hr>
 <b>Munchify</b> by: 'A' Csapat
 <hr>
-A Csapat tagjai:<br>
+A Csapat tagjai:<br><br>
 <ul>
 <li>Tátrai Péter (JB7BRA)<br></li>
 <li>Kucserka Szabolcs (ULD7BX)<br></li>
