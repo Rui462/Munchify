@@ -10,5 +10,5 @@ A Csapat tagjai:<br><br>
 <li>Tátrai Bence (E0U4E3)<br></li>
 </ul>
 <hr>
-<b>Felhasználói dokumentáció: </b>(LINK HELYE)<br>
+<b>Felhasználói dokumentáció: </b><a href='https://docs.google.com/document/d/1HPzMeX0Z7GS7Qvnah7vtN1EmLc5KoJbg_vA6bugRh4E/edit?usp=sharing'>https://docs.google.com/document/d/1HPzMeX0Z7GS7Qvnah7vtN1EmLc5KoJbg_vA6bugRh4E/edit?usp=sharing</a><br>
 <b>Fejlesztői dokumentáció: </b>(LINK HELYE)
