@@ -2,9 +2,11 @@
 <hr>
 <b>Munchify</b>by: 'A' Csapat
 <hr>
-A Csapat tagjai:
-Tátrai Péter (JB7BRA)
-Kucserka Szabolcs (ULD7BX)
-Szabó Áron (I5EE5T)
-Tátrai Bence (E0U4E3)
+A Csapat tagjai:<br>
+Tátrai Péter (JB7BRA)<br>
+Kucserka Szabolcs (ULD7BX)<br>
+Szabó Áron (I5EE5T)<br>
+Tátrai Bence (E0U4E3)<br>
 <hr>
+<b>Felhasználói dokumentáció: </b>(LINK HELYE)<br>
+<b>Fejlesztői dokumentáció: </b>(LINK HELYE)
