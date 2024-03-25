@@ -1,6 +1,6 @@
 <img src='https://munchify.hu/img/munchify_logo1.png' style='width: 20%;'></img></center>
 <hr>
-<b>Munchify</b> by: 'A' Csapat
+<b>Munchify</b> by: 'A' Csapat<br><a href='https://www.munchify.hu'>www.munchify.hu</a>
 <hr>
 A Csapat tagjai:<br><br>
 <ul>
