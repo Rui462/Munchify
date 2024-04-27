@@ -1,0 +1,267 @@
+body
+{
+    font-family: "Quicksand", sans-serif; 
+	/* font-family: "Lexend", sans-serif !important; */
+}
+
+
+/*carousel*/
+
+#carouselExampleFade{
+    max-height:200px;
+    box-shadow: 1px 4px 30px 0px rgba(0,0,0,0.75);
+    margin-bottom: 30px;
+}
+
+.topKep
+{
+    filter: brightness(30%);
+    max-height: 200px;
+    object-fit: cover;
+}
+.logokicsi
+{
+    max-width:100px;
+    text-shadow: -3px 3px 7px rgba(0,0,0,0.74);
+}
+
+.carousel-caption
+{
+    font-family: "Lemonada", cursive;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  user-select: none;
+}
+
+/*felkapottak*/
+.felkapottak
+{
+    font-size:20px;
+}
+.betoltokepernyo{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #3a3e94;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1050;
+}
+@keyframes betoltve{
+	0%{opacity: 1; visibility: visible;left: 50%; top: 50%; transform: translate(-50%, -50%);}
+	100%{opacity: 0; visibility: hidden;left: 50%; top: -50%; transform: translate(-50%, -50%);}
+}
+@keyframes megjelen{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+#betoltokep, #betoltoikon{
+	animation-name: megjelen;
+	animation-duration: 0.3s;
+	animation-fill-mode: both;
+	animation-delay: 0.5s;
+}
+.Cardrow{
+    margin-bottom:20px;
+	
+}
+.card-body{
+	padding: 0;
+	
+	
+}
+.kartyatartalom{
+	padding: 1em;
+	
+	
+}
+#FelkapottContainer{
+    margin-bottom:130px;
+}
+.card-img-top{
+    width: 100%;
+    height:10em;
+}
+@keyframes kosarbateve{
+	0%{background-color: white;}
+	50%{background-color: #deffe7;}
+	100%{background-color: white;}
+}
+.card{
+	width: 18rem;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+	
+}
+.btn{
+	/* background: linear-gradient(90deg, #3d84b8 0%, rgb(36, 128, 193) 100%); */
+	border: 1px solid white;
+	border-radius: 15px;
+	transition: 0.8s !important;
+}
+.btn:hover{
+	box-shadow: rgba(255, 255, 255, 0.212) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.card img{
+	object-fit: cover;
+	padding:4px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.termek-cim{
+	height: none;
+}
+.mennyisegszam{
+	width: 2ch;
+}
+.hiba{
+    padding: 0.5em;
+    opacity: 1;
+    width: 100%;
+    background-color: #ffabab; 
+	border: 1px solid red;
+    color: #590909;
+    font-family: Open Sans;
+    font-size: 1em;
+    border-radius: 0.5em;
+	visibility: visible;
+}
+.ertesites_container{
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(-0%, 0%);
+    visibility: hidden;
+    opacity: 0;
+    width: 25%;
+    padding-bottom: 1.5em;
+	padding-right: 2.5em;
+	z-index: 999;
+}
+#csapatkep{
+	width: 35vw;
+}
+@media only screen and (max-width: 992px) {
+	.card{
+		width: 100%;
+		
+	}
+	.card img{
+		object-fit: cover;
+		padding:4px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-top-right-radius: 0px;
+	}
+	.card-img-top{
+		float: left;
+		width: 25vw;
+		vertical-align: middle;
+	}
+	.termek-cim-container{
+		float: left;
+		display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  vertical-align: middle;
+	}	
+	.termek-cim{
+		position: absolute;
+		top: 10%;
+		vertical-align: middle;
+		transform: translate(-0%, -10%);
+		padding-left: 1em;
+		padding-bottom: 1em;
+	}
+	.termek-ar-container{
+		float: left;
+		display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  vertical-align: middle;
+	}	
+	.termek-mennyiseg-container{
+		float: left;
+		display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  vertical-align: middle;
+	}
+	.termek-ar{
+		float: left;
+		vertical-align: middle;
+		position: absolute;
+		top: 20%;
+		transform: translate(-0%, -20%);
+		padding-left: 1em;
+		padding-top: 1em;
+	}
+	.termek-mennyiseg{
+		float: left;
+		vertical-align: middle;
+		position: absolute;
+		top: 50%;
+		transform: translate(-0%, -50%);
+		padding-left: 1em;
+		padding-top: 1em;
+		touch-action: manipulation;
+	}
+	.kosar-gomb-container{
+		float: left;
+		display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  vertical-align: middle;
+	}
+	.kosar-gomb{
+		float: left;
+		vertical-align: middle;
+		position: absolute;
+		top: 90%;
+		transform: translate(-0%, -90%);
+		padding-left: 1em;
+		padding-top: 1em;
+	}
+	.kartyatartalom{
+	padding: 0.5em;
+}
+	.mennyisegszam{
+		width: 4ch;
+		color: black;
+	}
+	.ertesites_container{
+        position: fixed;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        visibility: hidden;
+        opacity: 1;
+        width: 75%;
+        padding-top: 1em;
+		padding-bottom: 0em;
+		padding-right: 0em;
+    }
+    .hiba{
+        padding: 0.5em;
+        animation-name: hibaani;
+        animation-duration: 4s;
+        animation-fill-mode: both;
+        visibility: hidden;
+        opacity: 0;
+        width: 100%;
+        background-color: #ffabab; 
+		border: 1px solid red;
+		color: #590909;
+        font-family: Open Sans;
+        font-size: 1em;
+        border-radius: 0.5em;
+    }
+	#csapatkep{
+		width: 100%;
+	}
+}

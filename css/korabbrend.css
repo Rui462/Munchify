@@ -1,0 +1,104 @@
+.kartya{
+    font-family: "Lexend", sans-serif !important;
+    width: 100%;
+	border-radius: 1em;
+	border: 1px solid #bdbdbd;
+	box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+	box-sizing: border-box;
+	text-align: left;
+	position: relative;
+	animation-name: megjelen;
+	animation-duration: 1s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+    margin-top: 1.5em;
+}
+
+
+
+
+.termeknev{
+    display: inline-block; 
+    vertical-align:middle;
+	padding-left: 1em;
+    padding-top: 1em;
+	font-size: 1em;
+    color:chocolate;
+
+}
+.kodszoveg{
+    padding-left: 1.3em;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.jobb
+{
+    position: absolute;
+    right: 0;
+    text-align: right;
+    height: 100%;
+    border-left: 1.5px dashed rgb(189, 189, 189);
+}
+.ar{
+   position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 1em;
+    font-size:1.1em;
+    font-weight: bold;
+    color: rgb(0, 43, 0);
+}
+
+.vegosszeg{
+    font-size: 10px;
+    color: gray;
+}
+
+.lista{
+    color:rgb(62, 62, 62);
+    font-style: italic;
+}
+
+
+/*carousel*/
+
+#carouselExampleFade{
+    max-height:200px;
+    box-shadow: 1px 4px 30px 0px rgba(0,0,0,0.75);
+    margin-bottom: 30px;
+}
+
+.topKep
+{
+    filter: brightness(30%);
+    max-height: 200px;
+    object-fit: cover;
+}
+.logokicsi
+{
+    max-width:1em;
+    text-shadow: -3px 3px 7px rgba(0,0,0,0.74);
+}
+
+.carousel-caption
+{
+    font-family: "Lemonada", cursive;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.statusz_atveve{
+    color:green;
+    text-align: center;
+    margin-top:25%;
+}
+.statusz_elutasitva{
+    color:crimson;
+    text-align: center;
+    margin-top:25%;
+    font-size: 13px;
+}

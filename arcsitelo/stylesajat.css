@@ -1,0 +1,348 @@
+html{
+    overflow: hidden;
+}
+.bejelentkezes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    text-align: center;
+
+}
+.elfelejtett{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    opacity: 0;
+    visibility: hidden;
+}
+#jelszovissza_szoveg{
+    text-align: center;font-family: Open Sans; font-size: 100%;
+    margin-bottom: 10%;
+}
+.kep{
+    text-align: center;
+}
+#logo{
+    width: 80%;
+}
+
+.hiba{
+    padding: 0.5em;
+    animation-name: hibaani;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    background-color: #871b1b; 
+    color: white;
+    font-family: Open Sans;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+.ertesites_container{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    visibility: visible;
+    opacity: 1;
+    width: 25%;
+    padding-top: 0.5em;
+}
+@keyframes hibaani{
+    0%{opacity: 0; visibility: visible;}
+    10%{opacity: 1; visibility: visible;}
+    90%{opacity: 1; visibility: visible;}
+    100%{opacity: 0; visibility: hidden;}	
+}
+.bejelentkezes_al{
+    padding: 1vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 1vw;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+}
+#bejelentkezes_szoveg{
+    text-align: center;font-family: Open Sans; font-size: 100%;
+}
+#bejelentkezes_fnev{
+    margin-top: 5%;
+}
+#bejelentkezes_jelszo{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.regisztracio_gomb{
+    margin-top: 5%;
+    padding: 0.5vw;
+}
+.elfelejtett_al{
+    padding: 1vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    text-align: center;
+
+}
+.regisztracio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+.regisztracio_al{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+input[type=text], input[type=password]{
+    padding: 0.5vw;
+    font-family: Open Sans;
+    font-size: 90%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 0.5em;
+    margin-top: 5%;
+    padding-left: 2%;
+    margin-bottom: 2,5%;
+}
+input[type=text]::placeholder, input[type=password]::placeholder{
+    color: white;
+    opacity: 1;
+}
+@keyframes focusvalt{
+    0%{color: white;}
+    100%{color: black;}
+}
+input[type=text]:focus::placeholder, input[type=password]:focus::placeholder{
+    color: black;
+}
+@keyframes adatfocus{
+    0%{border: 1px solid #a1a1a1; background: transparent;}
+    100%{border: 1px solid #072352; background-color: #dbe9ff;}
+}
+input[type=text]:focus, input[type=password]:focus{
+    animation-name: adatfocus;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    color: black;
+}
+.bejelentkezes_gomb{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #37b057;
+    background-color: #37b057;
+    font-family: Open Sans;
+    margin-top: 5%;
+    color: white;
+    padding: 0.5vw;
+    border-radius: 0.5em;
+}
+.bejelentkezes_gomb:hover{
+    background-color: #288240;
+    border: 1px solid #288240;
+    cursor: pointer;
+}
+.regisztracio_gomb{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #3765b0;
+    background-color: #3765b0;
+    font-family: Open Sans;
+    
+    color: white;
+    text-align: center;
+    border-radius: 0.5em;
+}
+.regisztracio_gomb:hover{
+    background-color: #224173;
+    border: 1px solid #224173;
+    cursor: pointer;
+    
+}
+@keyframes eltunik{
+    0%{opacity: 1; visibility: visible;}
+    100%{opacity: 0; visibility: hidden;}
+}
+@keyframes megjelen{
+    0%{opacity: 0; visibility: visible;}
+    100%{opacity: 1; visibility: visible;}
+}
+.kitolteshiba{
+    padding: 0.2vw;
+    width: 100%;
+    background-color: #e83f3f;
+    color: white;
+    font-family: Verdana;
+    font-size: 60%;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+ @-webkit-keyframes hatter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes hatter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes hatter {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+body{
+    background: linear-gradient(270deg, #00043a, #2d9dc5);
+    background-size: 400% 400%;
+
+    -webkit-animation: hatter 30s ease infinite;
+    -moz-animation: hatter 30s ease infinite;
+    animation: hatter 30s ease infinite;
+}
+#regisztracio_szoveg{
+    text-align: center; 
+    font-family: Open Sans; 
+    font-size: 100%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .bejelentkezes{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+       
+    }
+    .bejelentkezes_al{
+        border-radius: 110px 110px 0px 0px; 
+        height: 50%;
+        width: 100%;
+       
+       
+       
+    }
+    .kep{
+        height: 50%;
+        text-align: center;
+       
+    }
+    #logo{
+        width: 80%;
+        margin-top: 40%;
+    }
+
+    #bejelentkezes_szoveg{
+        font-size: 500%;
+        
+
+    }
+    #bejelentkezes_fnev{
+        font-size: 400%;
+        margin-top: 10%;
+
+    }
+    #bejelentkezes_jelszo{
+        font-size: 400%;
+        margin-top: 5%;
+margin-bottom: 5%;
+    }
+    #elfelejtett_jelszo_szoveg{
+       margin-top: 5%;
+        font-size: 300%;
+    }
+    #bejelentkezes_gomb{
+        font-size: 300%;
+        margin-top: 10%;
+        padding: 5%;
+    }
+    .regisztracio_gomb{
+        font-size: 300%;
+        margin-top: 10%;
+        padding: 5%;
+    }
+    .form{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    /*elfejtett css*/
+
+    #jelszovissza_szoveg{
+        font-size: 500%;
+        padding-top: 10%;
+    }
+    .elfelejtett{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .elfelejtett_al{
+        border-radius: 110px 110px 0px 0px; 
+        height: 60%;
+        width: 100%;
+    }
+    .bejelentkezes_gomb{
+        font-size: 300%;
+        margin-top: 10%;
+        padding: 5%;
+    }
+    input[type=text], input[type=password]{
+        font-size: 400%;
+        margin-top: 10%;
+    }
+
+    /*regisztracio css*/
+
+    #regisztracio_szoveg{
+        font-size: 500%;
+        padding-top: 10%;
+    }
+    #regisztracio{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .regisztracio_al{
+        border-radius: 110px 110px 0px 0px; 
+        height: 60%;
+        width: 100%;
+    }
+}

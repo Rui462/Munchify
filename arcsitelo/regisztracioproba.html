@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" href="floating.css">
+	<head>
+		<title>Munchify | Bejelentkezés</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	 	<link rel="stylesheet" href="./css/stylesajat.css">
+	</head>
+	<style>
+		
+		
+	</style>
+	<script>
+		
+		function reg_gomb(){
+			document.getElementById('bejelentkezes').style.animationName = 'eltunik';
+			document.getElementById('bejelentkezes').style.animationDuration = '0.2s';
+			document.getElementById('bejelentkezes').style.animationDelay = '0s';
+			document.getElementById('bejelentkezes').style.animationFillMode = 'both';
+			document.getElementById('regisztracio').style.animationName = 'megjelen';
+			document.getElementById('regisztracio').style.animationDelay = '0.3s';
+			document.getElementById('regisztracio').style.animationDuration = '0.2s';
+			document.getElementById('regisztracio').style.animationFillMode = 'both';
+		}
+		function be_gomb(){
+			document.getElementById('regisztracio').style.animationName = 'eltunik';
+			document.getElementById('regisztracio').style.animationDuration = '0.2s';
+			document.getElementById('regisztracio').style.animationDelay = '0s';
+			document.getElementById('regisztracio').style.animationFillMode = 'both';
+			document.getElementById('bejelentkezes').style.animationName = 'megjelen';
+			document.getElementById('bejelentkezes').style.animationDelay = '0.3s';
+			document.getElementById('bejelentkezes').style.animationDuration = '0.2s;'
+			document.getElementById('bejelentkezes').style.animationFillMode = 'both';
+		}
+		function elfelejtett(){
+			document.getElementById('bejelentkezes').style.animationName = 'eltunik';
+			document.getElementById('bejelentkezes').style.animationDuration = '0.2s';
+			document.getElementById('bejelentkezes').style.animationDelay = '0s';
+			document.getElementById('bejelentkezes').style.animationFillMode = 'both';
+			document.getElementById('elfelejtett').style.animationName = 'megjelen';
+			document.getElementById('elfelejtett').style.animationDelay = '0.3s';
+			document.getElementById('elfelejtett').style.animationDuration = '0.2s';
+			document.getElementById('elfelejtett').style.animationFillMode = 'both';
+		}
+		function elfelejtett_vissza(){
+			document.getElementById('elfelejtett').style.animationName = 'eltunik';
+			document.getElementById('elfelejtett').style.animationDuration = '0.2s';
+			document.getElementById('elfelejtett').style.animationDelay = '0s';
+			document.getElementById('elfelejtett').style.animationFillMode = 'both';
+			document.getElementById('bejelentkezes').style.animationName = 'megjelen';
+			document.getElementById('bejelentkezes').style.animationDelay = '0.3s';
+			document.getElementById('bejelentkezes').style.animationDuration = '0.2s;'
+			document.getElementById('bejelentkezes').style.animationFillMode = 'both';
+		}
+	</script>
+	<script>
+	// ELLENŐRZI HOGY A MEGADOTT EMAIL HELYES-E
+		
+		function emailhiba_on(){
+			document.getElementById("email").style.backgroundColor = "#a10202";
+			
+		}
+		function emailhiba_off(){
+			document.getElementById('email').style.background = 'transparent';
+		}
+
+		function validateEmail(val) {
+			var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			return re.test(val);
+		}
+		function validate() {
+		var email = document.getElementById("email");
+		if (validateEmail(email.value)) {
+				emailhiba_off()
+		  } else {
+				emailhiba_on()
+		  }
+		}
+		
+	</script>
+	<body>
+		<div class="ertesites_container" id="ertesites_container"></div>
+		<div id='bejelentkezes' class='bejelentkezes'>
+		<div class="kep">
+			<img src='img/munchify3.png' id="logo"/>
+		</div>
+		
+		<div class='bejelentkezes_al'>
+			
+			<span id="bejelentkezes_szoveg" ><b>Bejelentkezés</b></span><br>
+			<div class="form">
+				<form  method='POST'>
+					<input type='text' placeholder='Felhasználónév' id="bejelentkezes_fnev" name='bejelentkezes_fnev' /><br>
+					
+					<input type='password' placeholder='Jelszó' autocomplete="off" id="bejelentkezes_jelszo" name='bejelentkezes_pw' />
+					
+					<span id="elfelejtett_jelszo_szoveg"  onClick='elfelejtett();'>Elfelejtett jelszó</span>
+					
+					<input class='bejelentkezes_gomb' type='button' id="bejelentkezes_gomb" value='Bejelentkezés' name='bejelentkezes_gomb' />
+					
+				</form>
+				<button class='regisztracio_gomb' value="" onClick='reg_gomb()'>Regisztráció</button>
+				
+			</div>
+			
+			
+			
+		</div>
+		</div>
+		<div id='elfelejtett' class='elfelejtett'>
+			<div class="kep">
+			<img src='img/munchify3.png' id="logo" >
+			</div>
+		<div class='elfelejtett_al'>
+			
+			<span  id="jelszovissza_szoveg"><b>Jelszó visszaállítás</b></span><br>
+			<div class="form">
+			<form method='POST'>
+				<input type='text' id='emailinput 'placeholder=" Email cím" name='elfelejtett_email' /><br>
+				
+				<input class='bejelentkezes_gomb' type='submit' value='Email küldése' name='elfelejtett_gomb' onclick="belepes_check()" />
+				<button class='regisztracio_gomb' onClick='elfelejtett_vissza()'>Vissza a bejelentkezéshez</button>
+			</form>
+			</div>
+			
+		</div>
+		</div>
+		<div id='regisztracio' class='regisztracio'>
+		<div class="kep">
+			<img src='img/munchify3.png' id="logo" />
+		</div>
+		<div class='regisztracio_al'>
+			
+			<span id="regisztracio_szoveg" ><b>Regisztráció</b></span><br>
+			<div class="form">
+			<form method='POST'>
+				<input type='text' id="vnev" placeholder='Vezetéknév' name='regisztracio_vnev'  style='width: 50%;'/><input type='text' id="knev" placeholder='Keresztnév' name='regisztracio_knev' style='width: 50%;'/><br>
+				
+				<input type='text' id="fnev" placeholder='Felhasználónév' name='regisztracio_fnev' /><br>
+				
+				<input type='text' placeholder='Email Cím' onchange="return validate()" id="email" name='regisztracio_email' /><br>
+				
+				<input type='password' id="jelszo1" placeholder='Jelszó' autocomplete="off" name='regisztracio_pw' />
+				
+				<input type='password' id="jelszo2" placeholder='Jelszó ismét' autocomplete="off" name='regisztracio_pw_megint' />
+				
+				<input id="regGomb" class='regisztracio_gomb' type='button' value='Regisztráció' name='regisztracio_gomb' />
+				
+				<button class='bejelentkezes_gomb' onClick='be_gomb()'>Vissza a bejelentkezéshez</button>
+			</form>
+			</div>
+			
+			<span id="regValasz"></span>
+		</div>
+		</div>
+
+        <script src="./js/bejelentkezes.js"></script>
+		<!--<script src="./js/regisztracio.js"></script> -->
+	</body>
+</html>

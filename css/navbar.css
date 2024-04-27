@@ -1,0 +1,63 @@
+/*navbar*/
+#main_nav {
+    background: rgb(91, 47, 161);
+    background: linear-gradient(90deg, #3d84b8 0%, rgba(24, 89, 135, 1) 100%);
+    color:white;
+	z-index: 999;
+}
+
+#navkep {
+    max-width: 90px;
+}
+.nav-item
+{
+    margin-left:50px;
+	color: #fff; !important
+	
+}
+#navbarNav{
+    justify-content: center;	
+}
+#keresomezo{
+	background: transparent; 
+	border-radius: 10vw; border: 
+	1px solid white; color: white; 
+	outline: none;
+	padding-left: 1em;
+	width: 10em;
+	font-size: 1.2em;
+	text-align: left;
+}
+#keresomezo::placeholder{
+	color: white;
+}
+.nav-link {
+       color: white !important;
+    }
+.nav-link:hover {
+       color: #dedede !important;
+    }
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+@keyframes hibaani{
+    0%{opacity: 0; visibility: visible;}
+    10%{opacity: 1; visibility: visible;}
+    90%{opacity: 1; visibility: visible;}
+    100%{opacity: 0; visibility: hidden;}	
+}
+@media only screen and (max-width: 992px) {
+	#keresomezo{
+		background: transparent; 
+		border-radius: 10vw; border: 
+		1px solid white; color: white; 
+		outline: none;
+		text-align: left;
+		padding-left: 1em;
+		width: 10em;
+		font-size: 1em;
+	}
+}

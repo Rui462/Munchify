@@ -1,0 +1,134 @@
+.kosartermek{
+	width: 100%;
+	border-radius: 1em;
+	border: 1px solid #bdbdbd;
+	box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+	box-sizing: border-box;
+	text-align: left;
+	position: relative;
+	animation-name: megjelen;
+	animation-duration: 1s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+}
+.kosartermek img{
+	object-fit: cover;
+	width: 6em;
+	height: 6em;
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+	display: inline-block;
+	vertical-align:middle;
+}
+.termeknev{
+	display: inline-block; 
+    vertical-align:middle;
+	padding-left: 1em;
+	font-size: 1.3em;
+}
+.kuka{
+	padding-left: auto;
+	display: inline-block; 
+    vertical-align:middle;	
+}
+.eltavolitasgomb{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	padding-right: 1em;
+	transform: translate(-0%, -50%);
+	font-size: 1em;
+}
+#vegosszeg{
+	animation-name: megjelen;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+	color: white;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.8em;
+}
+
+#rendelesgomb{
+	/*position: sticky;
+	bottom:0;*/
+	opacity: 1;
+	background-color:transparent;
+	border-radius: 10px;
+	border: 1px solid whitesmoke;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	float: right;
+	
+}
+#kikapcsolt_kosar{
+	/*position: sticky;
+	bottom:0;*/
+	opacity: 1;
+	background-color:transparent;
+	border-radius: 10px;
+	border: 1px solid whitesmoke;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	float: right;
+	
+}
+#rendelesgombDiv{
+	position: fixed;
+	bottom: 0%;
+	transform: translate(-0%,-0%);
+	margin-top:50px;
+	padding: 15px;
+	background: rgb(91, 47, 161);
+    background: linear-gradient(90deg, rgba(61, 132, 184, 1) 0%, rgba(24, 89, 135, 1) 100%);
+	width: 100%;
+	animation-name: megjelen;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+}
+#nemRendelhet{
+	width: 100%;
+	border: 1px solid gray;
+	border-radius:10px;
+	padding:5px;
+	margin-bottom:5px;
+	background-color: crimson;
+	color: aliceblue;
+}
+#dropdown_gomb{
+	width: 100%;
+	padding: 1em;
+	box-sizing: border-box;
+	animation-name: megjelen;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+#szunetatvetel{
+	padding-bottom: 15em;
+	visibility: hidden;
+	opacity: 0;
+}
+@media only screen and (max-width: 992px) {
+	.termeknev{
+		display: inline-block; 
+		vertical-align:middle;
+		padding-left: 1em;
+		font-size: 1em;
+	}
+	#vegosszeg{
+		animation-name: megjelen;
+		animation-duration: 1s;
+		animation-delay: 3s;
+		animation-fill-mode: both;
+		color: white;
+		float: left;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0.8em;
+		padding-bottom: 0.4em;
+	}
+	#szunetatvetel{
+		padding-bottom: 15em;
+	}
+}

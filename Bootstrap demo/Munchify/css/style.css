@@ -1,0 +1,63 @@
+body
+{
+    font-family: "Quicksand", sans-serif;
+}
+/*navbar*/
+#main_nav {
+    background: rgb(91, 47, 161);
+    background: linear-gradient(90deg, rgba(91, 47, 161, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    color:white;
+}
+
+#navkep {
+    max-width: 100px;
+}
+.nav-item
+{
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    margin-left:50px;
+}
+#navbarNav{
+    justify-content: center;
+}
+
+
+/*carousel*/
+
+#carouselExampleFade{
+    max-height:200px;
+    box-shadow: 1px 4px 30px 0px rgba(0,0,0,0.75);
+    margin-bottom: 30px;
+}
+
+.topKep
+{
+    filter: brightness(30%);
+    max-height: 200px;
+    object-fit: cover;
+}
+.logokicsi
+{
+    max-width:100px;
+    text-shadow: -3px 3px 7px rgba(0,0,0,0.74);
+}
+
+.carousel-caption
+{
+    font-family: "Lemonada", cursive;
+}
+
+/*felkapottak*/
+.felkapottak
+{
+    font-size:20px;
+}
+
+
+.Cardrow{
+    margin-bottom:20px;
+}
+
+#FelkapottContainer{
+    margin-bottom:130px;
+}
