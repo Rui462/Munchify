@@ -1,4 +1,0 @@
-mysqli_sql_exception: php_network_getaddresses: getaddrinfo for localhosta failed: Nincs ilyen ismert állomás.  in C:\xampp\htdocs\munchify\sql_conn\conn_userdat.php:12
-Stack trace:
-#0 C:\xampp\htdocs\munchify\sql_conn\conn_userdat.php(12): mysqli_connect('localhosta', 'root', Object(SensitiveParameterValue), 'munchify_userda...')
-#1 {main}
